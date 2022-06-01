@@ -1,0 +1,65 @@
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #FCFCFC;
+    margin-bottom: 40px;
+}
+button{
+    background-color: $primary;
+    border-radius: 4px;
+    width: 200px;
+    color: $neutral-white;
+    padding: 13.5px;
+    font-weight: 400;
+    font-size: 16px;
+    &:hover{
+        background-color: #65a83f;
+    }
+}
+input{
+    background-color: $neutral-light-grey;
+    border-radius: 4px;
+    width:100%;
+    height: 48px;
+    border: 2px solid $neutral-light-grey;
+    padding: 12px;
+    &:hover{
+        border: 2px solid $neutral-black;
+    }
+    &:focus{
+        background-color: white !important;
+        border: 2px solid $neutral-black;
+    }
+    
+}
+
+@layer utilities {
+    .animation-delay-200 {
+      animation-delay: 0.2s;
+    }
+    .animation-delay-400 {
+      animation-delay: 0.4s;
+    }
+}
+.circle {
+    @apply w-2 h-2 my-12 mx-1 bg-gray-500 rounded-full;
+}
+.card{
+    background-color: white;
+    box-shadow: 0px 4px 16px rgb(32 32 32 / 5%);
+    border-radius: 24px;
+    min-width: 300px;
+    max-width: 730px;
+    text-align: center;
+    padding: 20px 20px 28px;
+    margin: auto;
+    margin-top: 44px;
+    .center{
+        padding: 20px 14%;
+    }
+}
+.icon:hover{
+    filter: invert(15%) sepia(100%) saturate(2476%) hue-rotate(10deg) brightness(118%) contrast(119%);
+    cursor: pointer;
+}
